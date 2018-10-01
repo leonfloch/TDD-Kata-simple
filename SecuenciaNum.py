@@ -5,13 +5,15 @@ class SecuenciaNum:
 
         numero_elementos = 0
         minimo = 0
+        maximo = 0
 
         if len(secuencia) > 0:
             arraySecuencia = list(map(int, secuencia.split(",")))
             numero_elementos = len(arraySecuencia)
             minimo = min(arraySecuencia)
+            maximo = max(arraySecuencia)
 
-        return [numero_elementos, minimo]
+        return [numero_elementos, minimo, maximo]
 
 
 
