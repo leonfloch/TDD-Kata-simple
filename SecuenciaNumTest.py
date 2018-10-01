@@ -16,3 +16,7 @@ class SecuenciaNumTest(TestCase):
     def test_elementos_2_numeros(self):
         result = SecuenciaNum().procesar_secuencia("1,3")
         self.assertEqual(result[0], 2, "numero de elementos 2 numeros")
+
+    def test_elementos_N_numeros(self):
+        result = SecuenciaNum().procesar_secuencia("1,3,5,2,8")
+        self.assertEqual(result[0], 5, "numero de elementos N numeros")
