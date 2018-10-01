@@ -20,3 +20,8 @@ class SecuenciaNumTest(TestCase):
     def test_elementos_N_numeros(self):
         result = SecuenciaNum().procesar_secuencia("1,3,5,2,8")
         self.assertEqual(result[0], 5, "numero de elementos N numeros")
+
+
+    def test_minimo(self):
+        result = SecuenciaNum().procesar_secuencia("1,3,5,2,8")
+        self.assertEqual(result[1], 1, "calculo minimo")
