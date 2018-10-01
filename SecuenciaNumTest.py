@@ -29,3 +29,7 @@ class SecuenciaNumTest(TestCase):
     def test_maximo(self):
         result = SecuenciaNum().procesar_secuencia("1,3,5,2,8")
         self.assertEqual(result[2], 8, "calculo maximo")
+
+    def test_promedio(self):
+        result = SecuenciaNum().procesar_secuencia("2,3,5,2,8")
+        self.assertEqual(result[3], 4, "calculo promedio")
