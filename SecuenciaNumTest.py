@@ -25,3 +25,7 @@ class SecuenciaNumTest(TestCase):
     def test_minimo(self):
         result = SecuenciaNum().procesar_secuencia("1,3,5,2,8")
         self.assertEqual(result[1], 1, "calculo minimo")
+
+    def test_maximo(self):
+        result = SecuenciaNum().procesar_secuencia("1,3,5,2,8")
+        self.assertEqual(result[2], 8, "calculo maximo")
