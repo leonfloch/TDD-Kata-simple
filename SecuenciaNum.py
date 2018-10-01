@@ -6,7 +6,8 @@ class SecuenciaNum:
 
         if len(secuencia) > 0:
             numero_elementos = 1
-
+        if len(secuencia) > 1:
+            numero_elementos = 2
 
         return [numero_elementos]
 
